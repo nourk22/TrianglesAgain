@@ -39,6 +39,17 @@ public class Triangle{
     return ("v1("+v1.getX()+", "+v1.getY()+") v2(" + v2.getX()+", "+v2.getY()+") v3(" +v3.getX()+", "+v3.getY()+")");
   }
 
+//mutator
+  public void setVertex(int index, Point newP){
+    if (index==0){
+      v1=newP;
+    }else if (index==1){
+      v2=newP;
+    }else{
+      v3=newP;
+    }
+  }
+
   public static void main(String[] args){
   }
 }
