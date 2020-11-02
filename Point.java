@@ -29,7 +29,7 @@ public class Point{
 
 //returns true when this point has the same x andy values as the other point
   public boolean equals(Point other){
-    return (other.x==x && other.y==y);
+    return (other != null && other.x==x && other.y==y);
   }
 
   public static void main(String[] args){
